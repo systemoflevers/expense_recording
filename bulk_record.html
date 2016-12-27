@@ -1,10 +1,20 @@
 <html>
   <head>
     <link href="bulk_record.css" rel="stylesheet">
-    <scrip type="text/javascript" src="bulk_record.js"></scrip>
+    <script type="text/javascript" src="bulk_record.js"></script>
   </head>
   <body>
-    <textarea id="bulk_expenses"></textarea>
-    <input type="submit">
+    <div>
+      <label>who</label>
+      <input type="tex" id="who">
+      <div>WHEN|WHAT|AMOUNT|JOINT|DESCRIPTION</div>
+      <textarea id="bulk_expenses"></textarea>
+      <button onclick="convert()">go</button>
+    </div>
+    <form action="bulk_record.py" method="put">
+      <div id="split_container">
+      </div>
+      <input type="submit">
+    </form>
   </body>
 </html>
