@@ -17,7 +17,7 @@ def getParameters(expense):
     "what" : values[2],
     "amount" : values[3],
     "joint" : values[4],
-    "description"  values[5],
+    "desc"  values[5],
   }
   
   parameterList = (
